@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+         display: block;
+         background-color: white;
+        }
+
+        div {
+        }
+
+        .wrapper {
+            background-color: orange;
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 1fr 167px;
+            grid-template-areas:
+                "social main"
+                "nav nav"
+        }
+
+        .social {
+            grid-area: social;
+            background-color: blue;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: yellow;
+        }
+
+        .nav {
+            grid-area: nav;
+            background-color: green;
+        }
+
+        .nav-items {
+            display: flex;
+            justify-content: space-around;
+        }
+
+
+    </style>
+    <body>
+        <div class="wrapper">
+            <div class="social">social</div>
+            <div class="main">main</div>
+            <div class="nav">
+                <ul class="nav-items">
+                    <li>About</li>
+                    <li>Experience</li>
+                    <li>Recommendations</li>
+                    <li>Contact</li>
+                </ul>
+            </div>  
+        </div>
+    </body> 
+</html>
