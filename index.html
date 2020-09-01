@@ -1,60 +1,143 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        body {
-         display: block;
-         background-color: white;
-        }
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    :root {
+      --main-blue: #0581d3;
+    }
 
-        div {
-        }
+    * {
+      box-sizing: border-box;
+    }
 
-        .wrapper {
-            background-color: orange;
-            display: grid;
-            width: 100vw;
-            height: 100vh;
-            grid-template-columns: 200px 1fr;
-            grid-template-rows: 1fr 167px;
-            grid-template-areas:
-                "social main"
-                "nav nav"
-        }
+    body {
+      font-size: 16px;
+      display: block;
+      background-color: #ffffff;
+      color: var(--main-blue);
+      font-family: "Lato", sans-serif;
+    }
 
-        .social {
-            grid-area: social;
-            background-color: blue;
-        }
+    h1 {
+      font-size: 6rem;
+    }
 
-        .main {
-            grid-area: main;
-            background-color: yellow;
-        }
+    h2 {
+      font-size: 3rem;
+    }
 
-        .nav {
-            grid-area: nav;
-            background-color: green;
-        }
+    h3 {
+      font-size: 1.5rem;
+    }
 
-        .nav-items {
-            display: flex;
-            justify-content: space-around;
-        }
+    .wrapper {
+      display: grid;
+      width: 100vw;
+      height: 100vh;
+      grid-template-columns: 100px 1fr;
+      grid-template-rows: 1fr 167px;
+      grid-template-areas:
+        "social main"
+        "nav nav";
+    }
 
+    /* .grid-item {
+      border-style: solid;
+      border-color: var(--main-blue);
+    } */
 
-    </style>
-    <body>
-        <div class="wrapper">
-            <div class="social">social</div>
-            <div class="main">main</div>
-            <div class="nav">
-                <ul class="nav-items">
-                    <li>About</li>
-                    <li>Experience</li>
-                    <li>Recommendations</li>
-                    <li>Contact</li>
-                </ul>
-            </div>  
+    .social {
+      grid-area: social;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .social img {
+        width: 50px;
+    }
+
+    .main {
+      grid-area: main;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      text-align: center;
+    }
+
+    .title {
+      /* width: 60%; */
+      position: relative;
+      /* text-shadow: 5px 4px 2px rgba(0, 0, 0, 0.25); */
+    }
+
+    .title hr {
+      border: 1px solid var(--main-blue);
+      /* filter: drop-shadow(10px 8px 4px rgba(0, 0, 0, 0.25)); */
+    }
+
+    .memoji {
+      filter: drop-shadow(10px 8px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    .nav {
+      grid-area: nav;
+    }
+
+    .nav-items {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      list-style-type: none;
+    }
+
+    .nav-items li {
+      height: 100%;
+    }
+
+    .nav-items a:link {
+      text-decoration: none;
+      color: var(--main-blue);
+    }
+
+    .nav-items a:visited {
+      color: var(--main-blue);
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <div class="social grid-item">
+        <a href="https://twitter.com/jasonericdavis"><img src="Twitter_Logo_Blue.png" /></a>
+        <a href="https://github.com/jasonericdavis"><img src="GitHub-Mark-120px-plus.png" /></a>
+      </div>
+      <div class="main grid-item">
+        <div class="title">
+          <h1>@JasonEricDavis</h1>
+          <hr />
+          <h2>Software Engineer</h2>
         </div>
-    </body> 
+        <div class="memoji"><img src="memoji.png" /></div>
+      </div>
+      <div class="nav grid-item">
+        <ul class="nav-items">
+          <li>
+            <h3><a href="">About</a></h3>
+          </li>
+          <li>
+            <h3><a href="">Experience</a></h3>
+          </li>
+          <li>
+            <h3><a href="">Recommmendations</a></h3>
+          </li>
+          <li>
+            <h3><a href="">Contact</a></h3>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
 </html>
