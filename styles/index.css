@@ -1,100 +1,40 @@
-:root {
-  --main-blue: #0581d3;
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-size: 16px;
+    display: block;
+    @apply text-primary;
+    @apply font-latto;
+  }
+
+  h1 {
+    /* font-size: 6rem; */
+    @apply text-6xl;
+  }
+  
+  h2 {
+    /* font-size: 3rem; */
+    @apply text-4xl;
+  }
+  
+  h3 {
+    /* font-size: 1.5rem; */
+    @apply text-2xl;
+  }
+
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-size: 16px;
-  display: block;
-  background-color: #ffffff;
-  color: var(--main-blue);
-  font-family: "Lato", sans-serif;
-}
-
-h1 {
-  font-size: 6rem;
-}
-
-h2 {
-  font-size: 3rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-.wrapper {
-  display: grid;
-  width: 100vw;
-  height: 100vh;
-  grid-template-columns: 100px 1fr;
-  grid-template-rows: 1fr 167px;
-  grid-template-areas:
-    "social main"
-    "nav nav";
-}
-
-/* .grid-item {
-  border-style: solid;
-  border-color: var(--main-blue);
-} */
-
-.social {
-  grid-area: social;
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-.social img {
-    width: 50px;
-}
-
-.main {
-  grid-area: main;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
-}
-
-.title {
-  /* width: 60%; */
-  position: relative;
-  /* text-shadow: 5px 4px 2px rgba(0, 0, 0, 0.25); */
-}
-
-.title hr {
-  border: 1px solid var(--main-blue);
-  /* filter: drop-shadow(10px 8px 4px rgba(0, 0, 0, 0.25)); */
-}
-
-.memoji {
-  filter: drop-shadow(10px 8px 4px rgba(0, 0, 0, 0.25));
-}
-
-.nav {
-  grid-area: nav;
-}
-
-.nav-items {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  list-style-type: none;
-}
-
-.nav-items li {
-  height: 100%;
-}
-
-.nav-items a:link {
-  text-decoration: none;
-  color: var(--main-blue);
-}
-
-.nav-items a:visited {
-  color: var(--main-blue);
+@layer utilities {
+  .filter-drop-shadow {
+    filter: drop-shadow(10px 8px 4px rgba(0, 0, 0, 0.25));
+  }
 }

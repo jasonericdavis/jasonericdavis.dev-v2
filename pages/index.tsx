@@ -8,23 +8,23 @@ const IndexPage = () => (
           rel="stylesheet"
         />
       </Head>
-        <div className="wrapper">
-          <div className="social grid-item">
-            <a href="https://twitter.com/jasonericdavis"><img src="Twitter_Logo_Blue.png" /></a>
-            <a href="https://github.com/jasonericdavis"><img src="GitHub-Mark-120px-plus.png" /></a>
+        <div className="grid grid-flow-col grid-cols-layout grid-rows-layout h-screen p-8">
+          <div className="col-start-1 col-end-2 row-start-1 row-end-2 flex flex-col-reverse">
+            <a href="https://twitter.com/jasonericdavis"><img className="w-12" src="Twitter_Logo_Blue.png" /></a>
+            <a href="https://github.com/jasonericdavis"><img className="w-12"  src="GitHub-Mark-120px-plus.png" /></a>
           </div>
-          <div className="main grid-item">
-            <div className="title">
+          <div className="col-start-2 col-end-3 row-start-1 row-end-2 flex items-center justify-evenly">
+            <div className="title text-center">
               <h1>@JasonEricDavis</h1>
-              <hr />
+              <hr className="border-1 border-solid border-current"/>
               <h2>Software Engineer</h2>
             </div>
-            <div className="memoji"><img src="memoji.png" /></div>
+            <div className="filter-drop-shadow"><img src="memoji.png" /></div>
           </div>
-          <div className="nav grid-item">
-            <ul className="nav-items">
+          <div className="col-start-1 col-end-3 row-start-2 row-end-3">
+            <ul className="flex items-center justify-around">
               <li>
-                <h3><a href="">About</a></h3>
+                <h3><a className="no-underline" href="">About</a></h3>
               </li>
               <li>
                 <h3><a href="">Experience</a></h3>
