@@ -31,6 +31,10 @@
     @apply text-2xl;
   }
 
+  a {
+    @apply no-underline;
+  }
+
 }
 
 @layer utilities {

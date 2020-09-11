@@ -13,6 +13,12 @@ module.exports = {
         latto: ["Lato", "sans-serif"]
       },
 
+      /**
+       * allows for site-specific dimensions
+       * using the following classes:
+       *  - grid-columns-layout
+       *  - grid-rows-layout
+       * */ 
       gridTemplateColumns: {
         'layout': '100px 1fr'
       },

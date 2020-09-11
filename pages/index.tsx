@@ -14,7 +14,7 @@ const IndexPage = () => (
             <a href="https://github.com/jasonericdavis"><img className="w-12"  src="GitHub-Mark-120px-plus.png" /></a>
           </div>
           <div className="col-start-2 col-end-3 row-start-1 row-end-2 flex items-center justify-evenly">
-            <div className="title text-center">
+            <div className="text-center">
               <h1>@JasonEricDavis</h1>
               <hr className="border-1 border-solid border-current"/>
               <h2>Software Engineer</h2>
@@ -24,7 +24,7 @@ const IndexPage = () => (
           <div className="col-start-1 col-end-3 row-start-2 row-end-3">
             <ul className="flex items-center justify-around">
               <li>
-                <h3><a className="no-underline" href="">About</a></h3>
+                <h3><a href="">About</a></h3>
               </li>
               <li>
                 <h3><a href="">Experience</a></h3>
