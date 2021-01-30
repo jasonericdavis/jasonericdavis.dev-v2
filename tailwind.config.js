@@ -1,16 +1,23 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
-  future: {
-    // https://github.com/tailwindlabs/tailwindcss/pull/2137
-    removeDeprecatedGapUtilities: true,
-  },
-  purge: [],
+  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  darkMode: false,
   theme: {
     colors: {
-      primary: '#0581d3'
+      primary: "#0581d3",
+      transparent: "transparent",
+      current: "currentColor",
+      black: colors.black,
+      white: colors.white,
+      gray: colors.trueGray,
+      indigo: colors.indigo,
+      red: colors.rose,
+      yellow: colors.amber,
     },
     extend: {
       fontFamily: {
-        latto: ["Lato", "sans-serif"]
+        latto: ["Lato", "sans-serif"],
       },
 
       /**
@@ -18,15 +25,15 @@ module.exports = {
        * using the following classes:
        *  - grid-columns-layout
        *  - grid-rows-layout
-       * */ 
+       * */
       gridTemplateColumns: {
-        'layout': '100px 1fr'
+        layout: "100px 1fr",
       },
       gridTemplateRows: {
-        'layout': '1fr 50px'
-      }
+        layout: "50px 1fr",
+      },
     },
   },
-  variants: {},
+  variants: { extend: {} },
   plugins: [],
-}
+};
