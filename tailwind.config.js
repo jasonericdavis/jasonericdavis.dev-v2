@@ -1,12 +1,16 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
-  future: {
-    // https://github.com/tailwindlabs/tailwindcss/pull/2137
-    removeDeprecatedGapUtilities: true,
-  },
   purge: [],
   theme: {
     colors: {
-      primary: '#0581d3'
+      primary: '#0581d3',
+      black: colors.black,
+      white: colors.white,
+      gray: colors.trueGray,
+      indigo: colors.indigo,
+      red: colors.rose,
+      yellow: colors.amber
     },
     extend: {
       fontFamily: {
@@ -27,6 +31,8 @@ module.exports = {
       }
     },
   },
-  variants: {},
+  variants: {
+    extend: {}
+  },
   plugins: [],
 }
