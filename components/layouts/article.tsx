@@ -11,8 +11,8 @@ const Article = ({children, meta}) => {
                 li: (props) => <li {...props} className="my-2 list-disc"  />
              }}>
             <article className="mx-20 my-20 text-gray-700">
-                <h1 className="mb-10">{meta.title}</h1>
-                <p>Published {meta.published}</p>
+                <h1 className="my-5">{meta.title}</h1>
+                <p><i>{meta.published}</i></p>
                 {children}
             </article>
         </MDXProvider>
