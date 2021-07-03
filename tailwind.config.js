@@ -14,7 +14,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        latto: ["Lato", "sans-serif"]
+        latto: ["Lato", "sans-serif"],
       },
 
       /**
@@ -22,17 +22,17 @@ module.exports = {
        * using the following classes:
        *  - grid-columns-layout
        *  - grid-rows-layout
-       * */ 
+       * */
       gridTemplateColumns: {
-        'layout': '100px 1fr'
+        layout: "100px 1fr",
       },
       gridTemplateRows: {
-        'layout': '1fr 50px'
-      }
+        layout: "50px 1fr",
+      },
     },
   },
   variants: {
     extend: {}
   },
   plugins: [],
-}
+};
