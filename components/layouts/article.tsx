@@ -1,7 +1,12 @@
 import {MDXProvider} from '@mdx-js/react'
+import Head from 'next/head'
 
 const Article = ({children, meta}) => {
     return (
+        <>
+        <Head>
+            <title>{meta.title} by JasonEricDavis</title>
+        </Head>
         <MDXProvider
             components={{
                 h1: (props) => <h1 {...props} className="text-xl font-light" />,
@@ -17,7 +22,7 @@ const Article = ({children, meta}) => {
                 {children}
             </article>
         </MDXProvider>
-        
+        </>
     )
 }
 
