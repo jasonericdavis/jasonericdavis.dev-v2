@@ -22,6 +22,9 @@ const IndexPage = () => (
         <a href="https://github.com/jasonericdavis">
           <img className="w-12" src="GitHub-Mark-120px-plus.png" />
         </a>
+        <a href="blog" className="py-3 no-underline" >
+          <h3 className="w-12">BLOG</h3>
+        </a>
       </div>
       <div className="col-start-2 col-end-3 row-start-2 row-end-3 flex items-center justify-evenly">
         <div className="text-center w-1/2">

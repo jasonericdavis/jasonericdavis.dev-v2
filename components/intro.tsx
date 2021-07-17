@@ -16,10 +16,9 @@ const Intro = () => (
     <p className="my-5">
       I dont have much content at the moment but there is more coming. But until
       then you can check me out on{" "}
-      <a href="https://twitter.com/jasonericdavis">
+      <a className="no-underline" href="https://twitter.com/jasonericdavis">
         <span className="text-primary">Twitter</span>
-      </a>
-      .
+      </a>.
     </p>
   </div>
 );
