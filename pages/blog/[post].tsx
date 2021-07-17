@@ -29,7 +29,7 @@ export async function getStaticPaths() {
         paths: posts.map(item => {
             return {params: {post: item.path}}
         }),
-        fallback: true
+        fallback: false
     }
 }
 
