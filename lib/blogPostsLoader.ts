@@ -15,7 +15,7 @@ export const getAllBlogPostsFrontMatter = () => {
         const md = fs.readFileSync(fullPath,"utf8")
 
         const {data} = matter(md)
-        return { ...data, path: fullPath}
+        return { ...data, path: realSlug}
     })
 }
 
