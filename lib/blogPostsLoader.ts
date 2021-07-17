@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from 'gray-matter'
 
-const postsDirectory = path.join(process.cwd(), "__posts");
+const postsDirectory = path.join(process.cwd(), "_posts");
 
 export const getAllBlogPostsFrontMatter = () => {
     const posts = fs.readdirSync(postsDirectory);
