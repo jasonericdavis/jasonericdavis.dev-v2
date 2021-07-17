@@ -2,9 +2,9 @@ import fs from "fs";
 import path from "path";
 import matter from 'gray-matter'
 
-const postsDirectory = path.join(process.cwd(), "posts");
+const postsDirectory = path.join(process.cwd(), "__posts");
 
-export const  getAllBlogPostsFrontMatter = () => {
+export const getAllBlogPostsFrontMatter = () => {
     const posts = fs.readdirSync(postsDirectory);
     return posts.map((filename) => {
         if(!filename.endsWith('.md')) return null

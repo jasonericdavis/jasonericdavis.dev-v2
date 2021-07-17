@@ -1,23 +1,26 @@
 import {getBlogPost, getAllBlogPostsFrontMatter} from "../../lib/blogPostsLoader"
 import Markdown from "markdown-to-jsx";
-import path from "path";
+import Layout from '../../components/layouts/post'
 
-const Post = ({post}) => {
+type Post = {
+    title: string
+    published: string
+    path: string
+    content: string
+}
+
+
+const Post = ({content, ...props} : Post) => {
     return (
-        <Markdown>{post.content}</Markdown>
+        <Layout {...props}>
+            <Markdown >{content}</Markdown>
+        </Layout>
     )
 }
 
 export async function getStaticProps({params}) {
-    const postsDirectory = path.join(process.cwd(), "posts");
-    const postFilename =  path.join(postsDirectory, `${params.post}.md`)
     const post = getBlogPost(params.post);
-    
-    return {
-        props: {
-            post
-        }
-    }
+    return { props: { ...post } }
 }
 
 export async function getStaticPaths() {

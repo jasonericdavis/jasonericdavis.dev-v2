@@ -1,6 +1,7 @@
 ---
 title: Tips For Estimating
 published: 'Mar 6, 2021'
+description: '5 tips on creating estimates.'
 ---
 
 No matter what type of job you have you will be asked to provide an estimate of when you will be able to complete a task. You may be asked to estimate how long will it take to create a document, or complete a project. Everyone hates estimates. I don’t think I have ever come across a person that enjoys estimates. If you are new to estimates or have trouble creating estimates, this post will provide some pointers that I use when creating estimates. 
