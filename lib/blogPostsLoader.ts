@@ -7,14 +7,15 @@ const postsDirectory = path.join(process.cwd(), "_posts");
 export const getAllBlogPostsFrontMatter = () => {
     const posts = fs.readdirSync(postsDirectory);
     return posts.map((filename) => {
-        if(!filename.endsWith('.md')) return null
-        const md = fs.readFileSync(
-            path.join(postsDirectory, filename)
-            ,"utf8"
-        )
+        console.log(`Creating Post: ${filename}`)
+        //if(!filename.endsWith('.md')) return null
+        const realSlug = filename.replace(/\.md$/, '')
+        const fullPath = path.join(postsDirectory, `${realSlug}.md`)
+
+        const md = fs.readFileSync(fullPath,"utf8")
 
         const {data} = matter(md)
-        return { ...data, path: filename.replace('.md', '')}
+        return { ...data, path: fullPath}
     })
 }
 
