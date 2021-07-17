@@ -1,7 +1,7 @@
 import {MDXProvider} from '@mdx-js/react'
 import Head from 'next/head'
 
-const Article = ({children, meta}) => {
+const Article = ({meta, children}, ) => {
     return (
         <>
         <Head>

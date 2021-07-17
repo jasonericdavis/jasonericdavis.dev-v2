@@ -1,9 +1,7 @@
-import Layout from '../../components/layouts/article'
-
-export const meta = {
-  title: 'Tips For Estimating',
-  published: 'Mar 6, 2021'
-}
+---
+title: Tips For Estimating
+published: 'Mar 6, 2021'
+---
 
 No matter what type of job you have you will be asked to provide an estimate of when you will be able to complete a task. You may be asked to estimate how long will it take to create a document, or complete a project. Everyone hates estimates. I don’t think I have ever come across a person that enjoys estimates. If you are new to estimates or have trouble creating estimates, this post will provide some pointers that I use when creating estimates. 
 
@@ -43,6 +41,3 @@ I try to avoid Friday deadlines especially if it involves other people, because 
 
 ### Practice Makes Better, Not Perfect
 Estimation is a skill that you don’t perfect but rather improve. To become better and get more comfortable at estimating, you have to practice.  Practice by creating personal estimates for yourself. The more you estimate the easier it gets.  
-
-
-export default ({ children }) => <Layout meta={meta}>{children}</Layout>

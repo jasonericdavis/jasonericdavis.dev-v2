@@ -1,10 +1,7 @@
-import Layout from '../../components/layouts/article'
-
-export const meta = {
-  title: 'Worth Every Penny',
+---
+  title: 'Worth Every Penny'
   published: 'July 14, 2021'
-}
-
+---
 In my junior year of college, I knew I needed to prepare myself to have a job when I finished school. My goal was to try to get a job at a technology company that summer. 
 The school that I went to had an annual job fair (yes like once a year) in which only a handful of companies showed up. 
 Although my school was in an up-and-coming technology area we were lucky if even one technology company showed up to the job fair. 
@@ -29,6 +26,3 @@ I was confident that I could be an asset to the company and add value but to the
 
 What’s the point of this story? That was a pivotal moment in self-confidence. Had I not believed in my worth and abilities I could have easily been demoralized and lost all confidence. 
 Instead, I used that moment to motivate me to work harder and so that nobody could deny my value. You are worth every penny, don’t let anyone deny your value.
-
-
-export default ({ children }) => <Layout meta={meta}>{children}</Layout>
