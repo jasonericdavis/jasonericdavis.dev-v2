@@ -6,6 +6,8 @@ type Post = {
     title: string
     published: string
     path: string
+    description: string
+    image: string | null
     content: string
 }
 
@@ -20,7 +22,7 @@ const Post = ({content, ...props} : Post) => {
 
 export async function getStaticProps({params}) {
     const post = getBlogPost(params.post);
-    return { props: { ...post } }
+    return { props: { ...post, path: params.post } }
 }
 
 export async function getStaticPaths() {
