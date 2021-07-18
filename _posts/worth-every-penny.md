@@ -2,6 +2,7 @@
   title: 'Worth Every Penny'
   published: 'July 14, 2021'
   description: 'You are worth every penny, don’t let anyone deny your value.'
+  image: 'images/worth-every-penny.jpg'
 ---
 In my junior year of college, I knew I needed to prepare myself to have a job when I finished school. My goal was to try to get a job at a technology company that summer. 
 The school that I went to had an annual job fair (yes like once a year) in which only a handful of companies showed up. 
