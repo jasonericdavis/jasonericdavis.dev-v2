@@ -6,7 +6,7 @@ type LinkItemProp = {
 
 const LinkItem = ({title, link, img_src}:LinkItemProp) => (
     <div className='pb-2'>
-        <a href={link} className="no-underline" >
+        <a href={link} className="no-underline hover:underline" >
             {(img_src)
                 ? <img className="w-12" src={img_src} />
                 : <h3 className="w-12">{title.toUpperCase()}</h3>
