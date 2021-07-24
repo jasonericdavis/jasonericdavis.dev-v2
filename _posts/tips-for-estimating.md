@@ -1,6 +1,6 @@
 ---
 title: Tips For Estimating
-published: 'Mar 6, 2021'
+published: 'March 6, 2021'
 description: '5 tips on creating estimates.'
 ---
 
